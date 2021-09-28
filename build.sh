@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --tag nationalparks-mysql-image .
+docker build --tag nationalparks-mysql .

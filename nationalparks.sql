@@ -6,13 +6,14 @@ drop database if exists nationalparks_db;
 drop user if exists nationalparks_user;
 
 create database nationalparks_db;
-create user nationalparks_user;
-grant usage on *.* to nationalparks_user;
-grant all on nationalparks_db.* to nationalparks_user identified by 'nationalparks_user';
-grant all on nationalparks_db.* to nationalparks_user@localhost identified by 'nationalparks_user';
+create user 'nationalparks_user'@'%' identified by 'nationalparks_user';
+create user 'nationalparks_user'@'localhost' identified by 'nationalparks_user';
+
+grant all on nationalparks_db.* to 'nationalparks_user'@'%';
+grant all on nationalparks_db.* to 'nationalparks_user'@'localhost';
 flush privileges;
 
-use nationalparks_db
+use nationalparks_db;
 
 DROP TABLE IF EXISTS `NATIONAL_PARKS`;
 

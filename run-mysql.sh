@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -d --rm --name nationalparks-mysql nationalparks-mysql-image
+docker run -d --rm --name nationalparks-mysql nationalparks-mysql
