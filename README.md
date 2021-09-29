@@ -1,4 +1,4 @@
-# national-parks-mysql
+# nationalparks-mysql
 
 A simple repo to create a MySQL instance that has a single database- `nationalparks_db`, with a single table- `NATIONAL_PARKS` that contains a list of all the National Parks in the United States.
 
